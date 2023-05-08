@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
 :root {
   --text-color-title: #212121;
   --text-color-body: #757575;
   --color-active: #2196f3;
-  --font-family: 'Roboto', sans-serif;
+  --font-family: "Roboto", sans-serif;
   --font-size-sm: 14px;
   --font-size-md: 16px;
   --letter-spacing: 0.03em;
@@ -137,6 +137,12 @@ section ul {
   margin-right: 10px;
 }
 
+svg {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
 /* Global Header - Links */
 
 .global-header a {
@@ -164,7 +170,7 @@ section ul {
 
 .title-section {
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/background-img.jpg');
+    url("../images/background-img.jpg");
   padding: 200px 0;
   display: flex;
   text-align: center;
@@ -339,12 +345,4 @@ section ul {
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
-}
-
-svg {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  fill: black;
-  border: 2px solid black;
 }
