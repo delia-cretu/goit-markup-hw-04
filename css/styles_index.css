@@ -139,8 +139,10 @@ section ul {
 
 svg {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  border: 2px solid black;
+}
+
+header svg {
 }
 
 /* Global Header - Links */
