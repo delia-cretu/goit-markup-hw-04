@@ -62,15 +62,6 @@ section ul {
   margin: 0 auto;
 }
 
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-}
-
 /* Logo */
 
 .logo-web,
@@ -91,6 +82,22 @@ section ul {
 
 .footer-address .logo-studio {
   color: #ffffff;
+}
+
+/* SVG icons */
+
+svg {
+  display: inline-block;
+  border: 2px solid black;
+}
+
+header svg {
+  margin-right: 10px;
+}
+
+.icon-envelope {
+  width: 12px;
+  height: 16px;
 }
 
 /* Global Header */
@@ -130,19 +137,6 @@ section ul {
 
 .header-right-container li:last-of-type {
   margin-left: 40px;
-}
-
-.header-right-container img {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-svg {
-  display: inline-block;
-  border: 2px solid black;
-}
-
-header svg {
 }
 
 /* Global Header - Links */
@@ -206,7 +200,7 @@ header svg {
   position: relative;
 }
 
-.work-section ul:first-of-type img {
+.work-section ul:first-of-type svg {
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -274,7 +268,7 @@ header svg {
   position: relative;
 }
 
-.customer-section img {
+.customer-section svg {
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -342,7 +336,7 @@ header svg {
   position: relative;
 }
 
-.footer-media img {
+.footer-media svg {
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
