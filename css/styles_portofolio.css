@@ -69,17 +69,16 @@ svg {
   height: 31px;
 }
 
-.header-right-container .icon {
-  fill: #757575;
+.header-right-container svg {
   margin-right: 10px;
 }
 
-.icon-envelope {
+.header-right-container li:first-of-type svg {
   width: 16px;
   height: 12px;
 }
 
-.icon-smartphone {
+.header-right-container li:last-of-type svg {
   width: 10px;
   height: 16px;
 }
@@ -91,19 +90,18 @@ svg {
 }
 
 .footer-media .icon {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  color: #ffffff;
-  height: 44px;
-  width: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
 }
 
-.footer-media .icon svg {
-  height: 20px;
-  width: 20px;
+.footer-media .icon,
+.footer-media .icon:visited {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
 }
 
 .footer-media .icon:hover,
@@ -111,12 +109,16 @@ svg {
   background-color: var(--color-active);
 }
 
+.footer-media .icon svg {
+  height: 20px;
+  width: 20px;
+}
+
 /* Global Header */
 
 .global-header .container {
   background: #ffffff;
   font-size: var(--font-size-sm);
-  font-weight: 500;
   display: flex;
   justify-content: space-between;
 }
@@ -153,6 +155,10 @@ svg {
 
 /* Global Header - Links */
 
+.global-header a {
+  font-weight: 500;
+}
+
 .header-navigation a,
 .header-navigation a:visited {
   color: var(--text-color-title);
@@ -168,6 +174,8 @@ svg {
 .global-header a:hover,
 .global-header a.active {
   color: var(--color-active);
+  fill: var(--color-active);
+  cursor: pointer;
 }
 
 /* Portofolio section */
