@@ -76,6 +76,9 @@ svg {
 
 .header-right-container .icon {
   fill: #757575;
+}
+
+.header-right-container svg {
   margin-right: 10px;
 }
 
@@ -88,6 +91,16 @@ svg {
   width: 10px;
   height: 16px;
 }
+
+/* .header-right-container svg:first-of-type {
+  width: 16px;
+  height: 12px;
+}
+
+.header-right-container svg:last-of-type {
+  width: 10px;
+  height: 16px;
+} */
 
 .work-section .icon {
   height: 70px;
@@ -106,6 +119,10 @@ svg {
 .customer-section .icon svg {
   width: 106px;
   height: 60px;
+}
+
+.customer-section .icon,
+.customer-section .icon:visited {
   color: #afb1b8;
 }
 
@@ -158,7 +175,11 @@ svg {
 }
 
 .team-section .icon:hover,
-.team-section .icon:focus,
+.team-section .icon:focus {
+  background-color: var(--color-active);
+  color: #ffffff;
+}
+
 .footer-media .icon:hover,
 .footer-media .icon:focus {
   background-color: var(--color-active);
@@ -224,6 +245,8 @@ svg {
 .global-header a:hover,
 .global-header a.active {
   color: var(--color-active);
+  fill: var(--color-active);
+  cursor: pointer;
 }
 
 /* Sections */
