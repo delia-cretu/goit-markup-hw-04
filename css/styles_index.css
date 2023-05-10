@@ -113,7 +113,8 @@ svg {
   color: #afb1b8;
 }
 
-.customer-section .icon:hover {
+.customer-section .icon:hover,
+.customer-section .icon:focus {
   color: var(--color-active);
   border-color: var(--color-active);
 }
