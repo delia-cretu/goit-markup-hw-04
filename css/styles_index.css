@@ -106,19 +106,20 @@ svg {
   height: 70px;
 }
 
-.customer-section .icon {
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
+.work-section ul:first-of-type div,
+.customer-section .icon,
+.team-section .icon,
+.footer-media .icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.customer-section .icon svg {
-  width: 106px;
-  height: 60px;
+.customer-section .icon {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
 }
 
 .customer-section .icon,
@@ -126,10 +127,14 @@ svg {
   color: #afb1b8;
 }
 
-.customer-section .icon:hover,
-.customer-section .icon:focus {
+.customer-section .icon:hover {
   color: var(--color-active);
   border-color: var(--color-active);
+}
+
+.customer-section .icon svg {
+  width: 106px;
+  height: 60px;
 }
 
 .team-section .icons-list,
@@ -153,36 +158,33 @@ svg {
   border-radius: 50%;
   height: 44px;
   width: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.team-section .icon {
+.team-section .icon,
+.team-section .icon:visited {
   background-color: #ffffff;
   color: #afb1b8;
 }
 
-.footer-media .icon {
+.team-section .icon:hover {
+  background-color: var(--color-active);
+  color: #ffffff;
+}
+
+.footer-media .icon,
+.footer-media .icon:visited {
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
+}
+
+.footer-media .icon:hover {
+  background-color: var(--color-active);
 }
 
 .team-section .icon svg,
 .footer-media .icon svg {
   height: 20px;
   width: 20px;
-}
-
-.team-section .icon:hover,
-.team-section .icon:focus {
-  background-color: var(--color-active);
-  color: #ffffff;
-}
-
-.footer-media .icon:hover,
-.footer-media .icon:focus {
-  background-color: var(--color-active);
 }
 
 /* Global Header */
@@ -284,14 +286,6 @@ svg {
   background-color: #f5f4fa;
   border-radius: 4px;
   height: 120px;
-  position: relative;
-}
-
-.work-section ul:first-of-type svg {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
 }
 
 .work-section h3 {
