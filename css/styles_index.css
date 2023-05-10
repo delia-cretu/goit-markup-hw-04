@@ -88,16 +88,96 @@ section ul {
 
 svg {
   display: inline-block;
-  border: 2px solid black;
 }
 
-header svg {
+.header-right-container .icon {
+  fill: #757575;
   margin-right: 10px;
 }
 
 .icon-envelope {
-  width: 12px;
+  width: 16px;
+  height: 12px;
+}
+
+.icon-smartphone {
+  width: 10px;
   height: 16px;
+}
+
+.work-section .icon {
+  height: 70px;
+}
+
+.customer-section .icon {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customer-section svg {
+  width: 106px;
+  height: 60px;
+  color: #afb1b8;
+}
+
+.customer-section .icon:hover,
+.customer-section .icon:focus {
+  color: var(--color-active);
+  border-color: var(--color-active);
+}
+
+.team-section .icons-list,
+.footer-media .icons-list {
+  display: flex;
+  gap: 10px;
+}
+
+.team-section .icons-list {
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+.footer-media .icons-list {
+  margin-top: 20px;
+}
+
+.team-section .icon,
+.footer-media .icon {
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-section .icon {
+  background-color: #ffffff;
+  color: #afb1b8;
+}
+
+.footer-media .icon {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.team-section .icon svg,
+.footer-media .icon svg {
+  height: 20px;
+  width: 20px;
+}
+
+.team-section .icon:hover,
+.team-section .icon:focus,
+.footer-media .icon:hover,
+.footer-media .icon:focus {
+  background-color: var(--color-active);
 }
 
 /* Global Header */
@@ -257,22 +337,7 @@ header svg {
 .team-section p {
   color: var(--text-color-body);
   line-height: 1.2;
-  margin: 10px 0 30px;
-}
-
-.customer-section li {
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  height: 92px;
-  width: 170px;
-  position: relative;
-}
-
-.customer-section svg {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
+  margin-top: 10px;
 }
 
 /* Global footer */
@@ -320,25 +385,4 @@ header svg {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-top: 15px;
-}
-
-.footer-media ul {
-  margin-top: 20px;
-  display: flex;
-  gap: 10px;
-}
-
-.footer-media li {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  height: 44px;
-  width: 44px;
-  position: relative;
-}
-
-.footer-media svg {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
 }
