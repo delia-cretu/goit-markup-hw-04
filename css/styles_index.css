@@ -74,33 +74,19 @@ svg {
   height: 31px;
 }
 
-.header-right-container .icon {
-  fill: #757575;
-}
-
 .header-right-container svg {
   margin-right: 10px;
 }
 
-.icon-envelope {
+.header-right-container li:first-of-type svg {
   width: 16px;
   height: 12px;
 }
 
-.icon-smartphone {
+.header-right-container li:last-of-type svg {
   width: 10px;
   height: 16px;
 }
-
-/* .header-right-container svg:first-of-type {
-  width: 16px;
-  height: 12px;
-}
-
-.header-right-container svg:last-of-type {
-  width: 10px;
-  height: 16px;
-} */
 
 .work-section .icon {
   height: 70px;
@@ -166,7 +152,8 @@ svg {
   color: #afb1b8;
 }
 
-.team-section .icon:hover {
+.team-section .icon:hover,
+.team-section .icon:focus {
   background-color: var(--color-active);
   color: #ffffff;
 }
@@ -177,7 +164,8 @@ svg {
   color: #ffffff;
 }
 
-.footer-media .icon:hover {
+.footer-media .icon:hover,
+.footer-media .icon:focus {
   background-color: var(--color-active);
 }
 
